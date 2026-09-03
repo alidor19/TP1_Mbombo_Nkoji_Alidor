@@ -12,7 +12,7 @@ class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasApiTokens, HasFactory, Notifiable;
-
+    public $timestamps = false;
     protected $fillable = [
         'login',
         'password',
